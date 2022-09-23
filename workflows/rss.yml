@@ -1,6 +1,9 @@
 on:
   rss:
-    url: https://sspai.com/feed
+    url:
+      - https://www.woshipm.com/feed
+      - https://www.36kr.com/feed
+      - https://sspai.com/feed
 jobs:
   request:
     name: Make a HTTP Request
