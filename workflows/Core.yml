@@ -21,5 +21,5 @@ jobs:
               "content":"${{ on.rss.outputs.link }}", 
               "title": "${{ on.rss.outputs.title }}",
               "tags":["RSScore"],
-              "folder":"RSS"
+              "folder":"RSScore"
             }
