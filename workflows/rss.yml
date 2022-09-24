@@ -20,6 +20,6 @@ jobs:
               "type":"url",
               "content":"${{ on.rss.outputs.link }}", 
               "title": "${{ on.rss.outputs.title }}",
-              "tags":["标签A","标签B","标签C"],
+              "tags":["标签A","标签B","标签C","标签D"],
               "folder":"RSS"
             }
