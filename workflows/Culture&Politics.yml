@@ -1,0 +1,23 @@
+on:
+  rss:
+    url: https://api.feeddd.org/feeds/611e1fe88fae751e23641327
+      
+      
+jobs:
+  request:
+    name: Make a HTTP Request
+    runs-on: ubuntu-latest
+    steps:
+      - name: Make a HTTP Request
+        uses: actionsflow/axios@v1
+        with:
+          url: https://cubox.pro/c/api/save/1j9awmdknaxv7a
+          method: POST
+          body: |
+            {
+              "type":"url",
+              "content":"${{ on.rss.outputs.link }}", 
+              "title": "${{ on.rss.outputs.title }}",
+              "tags":["Culture&Politics"],
+              "folder":"RSS"
+            }
