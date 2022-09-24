@@ -5,6 +5,8 @@ on:
       - https://www.36kr.com/feed
       - https://sspai.com/feed
       - https://rsshub.app/zhubai/luzhnan
+      config:
+      outputsMode: combine
 jobs:
   request:
     name: Make a HTTP Request
