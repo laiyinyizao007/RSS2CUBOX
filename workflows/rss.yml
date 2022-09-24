@@ -4,6 +4,7 @@ on:
       - https://www.woshipm.com/feed
       - https://www.36kr.com/feed
       - https://sspai.com/feed
+      - https://rsshub.app/zhubai/luzhnan
 jobs:
   request:
     name: Make a HTTP Request
@@ -19,5 +20,6 @@ jobs:
               "type":"url",
               "content":"${{ on.rss.outputs.link }}", 
               "title": "${{ on.rss.outputs.title }}",
-              "folder":"RSS2"
+              "tags":["标签A","标签B","标签C"],
+              "folder":"RSS"
             }
