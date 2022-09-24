@@ -1,8 +1,8 @@
 on:
   rss:
-    url: 
-    - https://api.feeddd.org/feeds/611e1fe88fae751e23641327
-    - https://sspai.com/feed
+    url:
+      - https://api.feeddd.org/feeds/611e1fe88fae751e23641327
+      - https://sspai.com/feed
 jobs:
   request:
     name: Make a HTTP Request
@@ -18,6 +18,6 @@ jobs:
               "type":"url",
               "content":"${{ on.rss.outputs.link }}", 
               "title": "${{ on.rss.outputs.title }}",
-              "tags":["RSScore"],
-              "folder":"RSScore"
+              "tags":["CoreRSS"],
+              "folder":"CoreRSS"
             }
