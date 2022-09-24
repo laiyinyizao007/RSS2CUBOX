@@ -2,9 +2,18 @@ on:
   rss:
     url:
       - https://www.woshipm.com/feed
+      config: 
+      filterOutputs:
+        tag:Woshipm
       - https://www.36kr.com/feed
+        filterOutputs:
+        tag:36kr
       - https://sspai.com/feed
+        filterOutputs:
+        tag:sspai
       - https://rsshub.app/zhubai/luzhnan
+        filterOutputs:
+        tag:zhuhai
       
 jobs:
   request:
@@ -21,6 +30,6 @@ jobs:
               "type":"url",
               "content":"${{ on.rss.outputs.link }}", 
               "title": "${{ on.rss.outputs.title }}",
-              "tags":["Tech&Life"],
-              "folder":"RSS"
+              "tags":["${{ on.rss.outputs.tag }}"],
+              "folder":"rss3"
             }
