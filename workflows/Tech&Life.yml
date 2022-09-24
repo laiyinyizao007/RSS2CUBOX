@@ -2,16 +2,19 @@ on:
   rss:
     url:
       - https://www.woshipm.com/feed
-      config: 
-      filterOutputs:
-        tag:Woshipm
+        config: 
+          filterOutputs:
+          tag:Woshipm
       - https://www.36kr.com/feed
+      config: 
         filterOutputs:
         tag:36kr
       - https://sspai.com/feed
+      config: 
         filterOutputs:
         tag:sspai
       - https://rsshub.app/zhubai/luzhnan
+      config: 
         filterOutputs:
         tag:zhuhai
       
