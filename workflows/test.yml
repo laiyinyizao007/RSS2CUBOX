@@ -1,4 +1,4 @@
-Ron:
+on:
   rss:
     url:
       - https://api.feeddd.org/feeds/611e1fe88fae751e23641327
@@ -19,5 +19,5 @@ jobs:
               "content":"${{ on.rss.outputs.link }}", 
               "title": "${{ on.rss.outputs.title }}",
               "tags":["${{ on.rss.outputs.author }}"],
-              "folder":"RSS"
+              "folder":"Test"
             }
