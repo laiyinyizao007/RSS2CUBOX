@@ -1,8 +1,8 @@
 Ron:
   rss:
     url:
-      - url: https://api.feeddd.org/feeds/611e1fe88fae751e23641327
-      - url: https://sspai.com/feed
+      - https://api.feeddd.org/feeds/611e1fe88fae751e23641327
+      - https://sspai.com/feed
 jobs:
   request:
     name: Make a HTTP Request
