@@ -7,7 +7,7 @@ on:
       - https://api.feeddd.org/feeds/611e1fe88fae751e23641327
       - https://sspai.com/feed
     config:
-      active: False
+      active: True
 jobs:
   request:
     name: Make a HTTP Request
