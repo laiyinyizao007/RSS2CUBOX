@@ -23,6 +23,6 @@ jobs:
               "type":"url",
               "content":"${{ on.rss.outputs.link }}", 
               "title": "${{ on.rss.outputs.title }}",
-              "tags":["${{ on.rss.outputs.description}}"],
+              "tags":["${{ on.rss.outputs.author }}"],
               "folder":"test2"
             }
