@@ -1,10 +1,10 @@
 
 on:
   rss:
-    address:
-      - https://api.feeddd.org/feeds/611e1fe88fae751e23641327
+    url:
+      - path: https://api.feeddd.org/feeds/611e1fe88fae751e23641327
         subject: apple
-      - https://sspai.com/feed
+      - path: https://sspai.com/feed
         subject: banana
 jobs:
   request:
