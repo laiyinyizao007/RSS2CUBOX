@@ -6,6 +6,8 @@ on:
       - https://rsshub.app/zhubai/luzhnan
       - https://api.feeddd.org/feeds/611e1fe88fae751e23641327
       - https://sspai.com/feed
+    config:
+      active: False
 jobs:
   request:
     name: Make a HTTP Request
