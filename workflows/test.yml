@@ -19,8 +19,8 @@ jobs:
           body: |
             {
               "type":"url",
-              "content":"${{ on.rss.outputs.link }}", 
-              "title": "${{ on.rss.outputs.title }}",
-              "tags":["${{ on.rss.outputs.subject }}"],
+              "content":"${{ on.rss.url.path.outputs.link }}", 
+              "title": "${{ on.rss.url.path.outputs.title }}",
+              "tags":["${{ on.rss.url.subject.outputs.subject }}"],
               "folder":"RSS"
             }
