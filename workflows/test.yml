@@ -2,9 +2,9 @@
 on:
   rss:
     url:
-      - path: https://api.feeddd.org/feeds/611e1fe88fae751e23641327
+      - https://api.feeddd.org/feeds/611e1fe88fae751e23641327
         subject: apple
-      - path: https://sspai.com/feed
+      - https://sspai.com/feed
         subject: banana
 jobs:
   request:
@@ -19,8 +19,8 @@ jobs:
           body: |
             {
               "type":"url",
-              "content":"${{ on.rss.url.path.outputs.link }}", 
-              "title": "${{ on.rss.url.path.outputs.title }}",
-              "tags":["${{ on.rss.url.subject.outputs.subject }}"],
+              "content":"${{ on.rss.outputs.link }}", 
+              "title": "${{ on.rss.outputs.title }}",
+              "tags":["${{ on.rss.outputs.subject }}"],
               "folder":"RSS"
             }
