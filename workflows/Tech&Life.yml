@@ -2,7 +2,6 @@ on:
   rss:
     url:
       - https://www.woshipm.com/feed
-      - https://www.36kr.com/feed
       - https://rsshub.app/zhubai/luzhnan
       - https://api.feeddd.org/feeds/611e1fe88fae751e23641327
       - https://sspai.com/feed
