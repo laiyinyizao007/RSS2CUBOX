@@ -22,5 +22,5 @@ jobs:
               "content":"${{ on.rss.outputs.link }}", 
               "title": "${{ on.rss.outputs.title }}",
               "tags":["Tech&Life"],
-              "folder":"RSS"
+              "folder":"Others"
             }
