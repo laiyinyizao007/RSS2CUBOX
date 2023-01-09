@@ -1,0 +1,25 @@
+on:
+  rss:
+    url:
+     - https://www.woshipm.com/feed
+    config:
+      active: True
+jobs:
+  request:
+    name: Make a HTTP Request
+    runs-on: ubuntu-latest
+    steps:
+      - name: Make a HTTP Request
+        uses: actionsflow/axios@v1
+        with:
+          url: ${{ secrets.CUBOXAPI }}
+          method: POST
+          body: |
+            {
+              "type":"url",
+              "content":"${{ on.rss.outputs.link }}", 
+              "title": "${{ on.rss.outputs.title }}",
+              "tags":["Tech&Life"],
+              "folder":"WOSHIPM"
+            }
+            
